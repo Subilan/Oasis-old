@@ -1,10 +1,12 @@
-import { resolve } from "path";
+const path = require("path");
 
-export const pluginOptions = {
+module.exports = {
+  pluginOptions: {
     "style-resources-loader": {
-        preProcessor: "less",
-        patterns: [resolve(__dirname, "./src/css/*.less")],
+      preProcessor: "less",
+      patterns: [path.resolve(__dirname, "./src/css/*.less")],
     },
+  },
+  productionSourceMap: false,
+  transpileDependencies: ["vuetify"],
 };
-
-export const productionSourceMap = false;
