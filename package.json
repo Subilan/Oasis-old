@@ -30,6 +30,7 @@
     "vue-cli-plugin-style-resources-loader": "^0.1.4",
     "vue-cli-plugin-vuetify": "~2.1.0",
     "vue-template-compiler": "^2.6.11",
-    "vuetify-loader": "^1.7.0"
+    "vuetify-loader": "^1.7.0",
+    "yaml-loader": "^0.6.0"
   }
 }

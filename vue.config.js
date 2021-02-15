@@ -9,4 +9,15 @@ module.exports = {
   },
   productionSourceMap: false,
   transpileDependencies: ["vuetify"],
+  configureWebpack: {
+    module: {
+      rules: [
+        {
+          test: /\.ya?ml$/,
+          type: "json",
+          use: "yaml-loader",
+        },
+      ],
+    },
+  },
 };
